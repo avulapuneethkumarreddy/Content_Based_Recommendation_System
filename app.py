@@ -21,7 +21,7 @@ extract_similarity()
 # 🔹 Fetch movie poster
 # -----------------------------
 def fetch_poster(movie_id):
-    api_key = "25765bb6cff31174798bd861f9ad42c7"
+    api_key = "25765bb6cff31174798bd861f9ad42c7"  # this key may exprie in future so please use your own key from themoviedb.org
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US"
     try:
         response = requests.get(url, timeout=10)
